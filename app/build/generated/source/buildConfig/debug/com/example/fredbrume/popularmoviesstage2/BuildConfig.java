@@ -11,5 +11,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Fields from build type: debug
-  public static final String API_KEY = "3d0e744e4523e7814d41c3aeaee39ccb";
+  public static final String API_KEY = "";
 }
