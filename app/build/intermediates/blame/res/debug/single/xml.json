@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/fredbrume/AndroidStudioProjects/PopularMoviesStage2/app/build/intermediates/res/merged/debug/xml/pref_settings.xml",
+        "source": "/Users/fredbrume/AndroidStudioProjects/PopularMoviesStage2/app/src/main/res/xml/pref_settings.xml"
+    },
+    {
+        "merged": "/Users/fredbrume/AndroidStudioProjects/PopularMoviesStage2-master-3/app/build/intermediates/res/merged/debug/xml/pref_settings.xml",
+        "source": "/Users/fredbrume/AndroidStudioProjects/PopularMoviesStage2-master-3/app/src/main/res/xml/pref_settings.xml"
+    }
+]

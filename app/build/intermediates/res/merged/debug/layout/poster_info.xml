@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/cardview_light_background"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:cardElevation="@dimen/cardview_default_elevation"
+    card_view:cardMaxElevation="@dimen/cardview_default_elevation"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/title_info_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/poster_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/review_item_poster"
+                    android:layout_width="@dimen/movie_poster_width"
+                    android:layout_height="@dimen/movie_poster_height"
+                    android:scaleType="fitXY"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/movie_title"
+                    android:layout_width="211dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textSize="25dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toRightOf="@+id/review_item_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Teenage Mutant Turtle Ninja "
+                    android:layout_marginStart="@dimen/default_horizontal" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    style="@style/bodyText"
+                    android:layout_marginTop="@dimen/default_vertical"
+                    android:text="Action"
+                    app:layout_constraintLeft_toLeftOf="@+id/movie_title"
+                    app:layout_constraintTop_toBottomOf="@+id/movie_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:id="@+id/year"
+                    style="@style/bodyText"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/genre"
+                    app:layout_constraintTop_toBottomOf="@+id/genre"
+                    tools:text="2014-08-08"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="-4dp" />
+
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:paddingBottom="@dimen/default_vertical"
+                    android:stepSize="0.1"
+                    android:theme="@style/RatingBar"
+                    app:layout_constraintLeft_toLeftOf="@+id/year"
+                    app:layout_constraintTop_toBottomOf="@+id/year"
+                    card_view:layout_constraintVertical_bias="0.24000001" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_info_panel">
+
+            <TextView
+                android:id="@+id/overview"
+                style="@style/bodyText"
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                tools:text="The overview data will be displayed here" />
+
+
+            <TextView
+                android:id="@+id/showmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overview"
+                android:layout_marginTop="@dimen/default_vertical"
+                android:layout_marginBottom="@dimen/default_vertical"
+                android:layout_centerHorizontal="true"
+                android:text="Show more"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
